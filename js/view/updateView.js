@@ -24,11 +24,15 @@ updateView.cancel=function()
 };
 
 // init should be created last, it references function above.
-updateView.init=function(dom,nr)
+updateView.init=function(dom,rest)
 {
+	// de rest is de rest operator, dus een array van de andere variabelen, behalve dom.
+	var nr=parseInt(rest[0]); // nu is de eerste variabele in die array dus een integer!
+	
 	updateView.dom=dom; // bewaar een referentie naar de dom van deze sectie.
-	updateView.nr=nr; // bewaar een referentie naar het nummer dat we editen.
-	console.log("updateView init for book "+nr);
+	updateView.nr=nr; // bewaar een referentie naar het nummer van het element dat we editen.
+
+	console.log("updateView init for book "+nr+"("+typeof(nr)+")");
 	
 	// knoppen in footer aansluiten.
 	let ok=dom.getElementsByClassName("ok")[0];
