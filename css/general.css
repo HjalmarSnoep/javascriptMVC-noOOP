@@ -1,0 +1,44 @@
+html,body{
+	padding:0px;
+	margin: 0px;
+	position: relative;
+	height: 100%;
+}
+section{
+		margin-bottom: 150px; /* dit omdat de footer 50 px hoog is!*/
+}
+main{
+	padding: 25px;
+}
+header{
+	padding: 25px;
+	background-color: #aaa;
+	color: #fff;
+}
+body{
+	font-family: sans-serif;
+	background-color: #eee;
+}
+button{
+	padding: 15px;
+}
+footer{
+	padding: 25px;
+	margin: 0px;
+	background-color: #aaa;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+label{
+	width: 150px;
+}
+@media only screen and (max-width: 480px) {
+	section{
+		margin-bottom: 250px; /* dit omdat de footer 100 px hoog is!*/
+	}
+	footer{
+		height: 100px;
+	}
+}

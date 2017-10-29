@@ -1,0 +1,85 @@
+<!doctype HTML>
+<html>
+<head> 
+	<title>Minimal Crud webAPP</title>	
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+<body>
+
+<!-- all views/pages/view elements are defined in HTML as sections -->
+
+<section id="list">
+<!-- This is what you see if you interact with the list, in this case, just about always :) -->
+	<header>
+	  <h1>In onze bibliotheek</h1>
+	</header>
+	<main>
+		<ul id="boekenlijst">
+
+		</ul>
+	</main>
+	<footer>
+		<button id="createRecordButton">Create a new book record</button>
+		<button id="clearDataButton">Clear database</button>
+		<button id="initDataButton">Generate test data</button>
+	</footer>
+</section>
+
+<section id="create">
+	<header>
+	  <h1>Create a new book record</h1>
+	 </header>
+	 <main>
+		<div>
+			<div class="label">ISBN:</div>
+			<input class="isbn" />
+		</div>
+		<div>
+			<div class="label">Title:</div>
+			<input class="title" />
+		</div>
+		<div>
+			<div class="label">Auteur(s):</div>
+			<input class="auteur" />
+		</div>
+	 </main>
+	 <footer>
+		<button class="ok">Opslaan</button>
+		<button class="cancel">Annuleren</button>
+	 </footer>
+</section>
+
+<section id="update">
+	 <header>
+	  <h1>Update a book record</h1>
+	 </header>
+	 <main>
+		<div>
+			<div class="label">ISBN:</div>
+			<input class="isbn" />
+		</div>
+		<div>
+			<div class="label">Title:</div>
+			<input class="title" />
+		</div>
+		<div>
+			<div class="label">Auteur(s):</div>
+			<input class="auteur" />
+		</div>
+	 </main>
+	 <footer>
+		<button class="ok">Opslaan</button>
+		<button class="cancel">Annuleren</button>
+	 </footer>
+</section>
+
+
+<script src="js/model/listModel.js"></script>
+<script src="js/view/listView.js"></script>
+<script src="js/view/createView.js"></script>
+<script src="js/view/updateView.js"></script>
+<script src="js/controller/controller.js"></script> <!-- hides all sections that are NOT in use, inits model, so load last! -->
+
+</body>
+<html>

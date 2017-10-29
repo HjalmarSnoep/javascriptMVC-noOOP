@@ -1,0 +1,45 @@
+.lijstVeld{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 5px;
+	width: 150px;
+	position: relative;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	border: 1px solid #fff;
+	margin: 3px;
+	padding: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.image{
+	width: 50px;
+}
+.controls
+{
+	width: 200px;
+}
+.label{
+	font-weight: 900;
+	font-size: 10px;
+}
+input {
+	width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
